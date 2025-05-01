@@ -4,23 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b7e16dc-b4ec-4d3c-b9ba-ea36518ebc61" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Reconhecedor/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recognizer.Core/CpfRecognizer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recognizer.Core/EmailRecognizer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recognizer.Core/IRecognizer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recognizer.Core/NameRecognizer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recognizer.Core/PasswordRecognizer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recognizer.Core/PhoneNumberRecognizer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recognizer.Core/Recognizer.Core.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recognizer.Tests/CpfRecognizerTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recognizer.Tests/EmailRecognizerTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recognizer.Tests/NameRecognizerTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recognizer.Tests/PasswordRecognizerTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recognizer.Tests/PhoneNumberRecognizerTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recognizer.Tests/Recognizer.Tests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recognizer.sln" afterDir="false" />
+    <list default="true" id="0b7e16dc-b4ec-4d3c-b9ba-ea36518ebc61" name="Changes" comment="Create cpf recognizer">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Reconhecedor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Reconhecedor/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +18,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "beatriz-monteiro"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:beatriz-alcantara/recognizers.git",
+    "accountId": "6510fb3c-a2c6-401d-bb7a-d1ca9053d233"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/51474adfb97e7f5c4d4a668a38eddd80911fa43de685b2b38f2ef4801dd3cabd/Randomizer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d49485e469b7c56ea29d165b121cd86aa5aeb67e665b5f8c68166f6ede623c9/ArgumentOutOfRangeException.cs" root0="FORCE_HIGHLIGHTING" />
@@ -70,8 +67,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746066482997</updated>
-      <workItem from="1746066484665" duration="4165000" />
+      <workItem from="1746066484665" duration="5205000" />
     </task>
+    <task id="LOCAL-00001" summary="Create cpf recognizer">
+      <option name="closed" value="true" />
+      <created>1746071256094</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1746071256094</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,5 +87,7 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Create cpf recognizer" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
