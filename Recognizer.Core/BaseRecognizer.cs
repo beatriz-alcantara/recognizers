@@ -2,8 +2,8 @@
 
 namespace Recognizer.Core;
 
-public class CpfRecognizer : IRecognizer
+public abstract class BaseRecognizer
 {
-    private const string Pattern = @"\d{3}.\d{3}.\d{3}-\d{2}";
+    protected virtual string Pattern => "";
     public bool IsValid(string text) => Regex.IsMatch(text, Pattern);
 }

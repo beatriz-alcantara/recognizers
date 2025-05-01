@@ -1,6 +1,6 @@
 ﻿namespace Recognizer.Tests;
 
-public class PasswordRecognizerTests
+public class NameBaseRecognizerTests
 {
     
 }

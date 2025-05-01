@@ -1,6 +1,6 @@
 ﻿namespace Recognizer.Tests;
 
-public class PhoneNumberRecognizerTests
+public class PasswordBaseRecognizerTests
 {
     
 }

@@ -4,8 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b7e16dc-b4ec-4d3c-b9ba-ea36518ebc61" name="Changes" comment="Create cpf recognizer">
+    <list default="true" id="0b7e16dc-b4ec-4d3c-b9ba-ea36518ebc61" name="Changes" comment="Create others recognizers">
+      <change afterPath="$PROJECT_DIR$/Recognizer.Core/EmailBaseRecognizer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Recognizer.Tests/EmailBaseRecognizerTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Recognizer.Tests/NameBaseRecognizerTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Recognizer.Tests/PasswordBaseRecognizerTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Recognizer.Tests/PhoneNumberBaseRecognizerTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Reconhecedor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Reconhecedor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recognizer.Core/CpfRecognizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Recognizer.Core/CpfBaseRecognizer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recognizer.Core/EmailRecognizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Recognizer.Core/PasswordBaseRecognizer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recognizer.Core/IRecognizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Recognizer.Core/BaseRecognizer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recognizer.Core/NameRecognizer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recognizer.Core/PasswordRecognizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Recognizer.Core/NameBaseRecognizer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recognizer.Core/PhoneNumberRecognizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Recognizer.Core/PhoneNumberBaseRecognizer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recognizer.Tests/CpfRecognizerTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Recognizer.Tests/CpfBaseRecognizerTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recognizer.Tests/EmailRecognizerTests.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recognizer.Tests/NameRecognizerTests.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recognizer.Tests/PasswordRecognizerTests.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recognizer.Tests/PhoneNumberRecognizerTests.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +47,7 @@
   }
 }]]></component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/22647a7960d2619ab733924a2acfee09d32a8827c8c680a37cc4863678abec/LateBoundTestFramework.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/51474adfb97e7f5c4d4a668a38eddd80911fa43de685b2b38f2ef4801dd3cabd/Randomizer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d49485e469b7c56ea29d165b121cd86aa5aeb67e665b5f8c68166f6ede623c9/ArgumentOutOfRangeException.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -50,6 +67,7 @@
   "keyToString": {
     "04db3fc1-7800-4117-9337-44914906ece1.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "cf3003af-20f1-4d50-aeb9-6b7bd3c8f424.executor": "Debug",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -67,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746066482997</updated>
-      <workItem from="1746066484665" duration="5205000" />
+      <workItem from="1746066484665" duration="8504000" />
     </task>
     <task id="LOCAL-00001" summary="Create cpf recognizer">
       <option name="closed" value="true" />
@@ -77,7 +95,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746071256094</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Create others recognizers">
+      <option name="closed" value="true" />
+      <created>1746071904205</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746071904205</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,6 +114,26 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Create cpf recognizer" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Create others recognizers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create others recognizers" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Recognizer.Tests/EmailBaseRecognizerTests.cs</url>
+          <line>27</line>
+          <properties documentPath="D:\Codes\Reconhecedor\Recognizer.Tests\EmailRecognizerTests.cs" containingFunctionPresentation="Method 'GivenValidEmail_IsValid_ShouldReturnTrue'">
+            <startOffsets>
+              <option value="711" />
+            </startOffsets>
+            <endOffsets>
+              <option value="802" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

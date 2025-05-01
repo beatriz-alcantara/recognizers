@@ -1,23 +1,31 @@
 ﻿using Bogus;
 using FluentAssertions;
 using Recognizer.Core;
+using Xunit.Abstractions;
 
 namespace Recognizer.Tests;
 
-public class CpfRecognizerTests
+public class CpfBaseRecognizerTests
 {
     private readonly Faker _faker = new();
-    private readonly CpfRecognizer _recognizer = new();
+    private readonly CpfBaseRecognizer _baseRecognizer = new();
+    private readonly ITestOutputHelper _outputHelper;
+
+    public CpfBaseRecognizerTests(ITestOutputHelper outputHelper)
+    {
+        _outputHelper = outputHelper;
+    }
     
     [Fact]
     public void GivenTextWithMoreThan14Digits_IsValid_ShouldReturnFalse()
     {
-        var randomNumbers = () => new string('#', _faker.Random.Int(4, 7));
-        var cpf = _faker.Random.Replace($"{randomNumbers}.{randomNumbers}.{randomNumbers}-{randomNumbers}");
-
-        var result = _recognizer.IsValid(cpf);
+        var cpf = _faker.Random.Replace($"{GetRandomNumber()}.{GetRandomNumber()}.{GetRandomNumber()}-{GetRandomNumber()}");
+        _outputHelper.WriteLine(cpf);
+        var result = _baseRecognizer.IsValid(cpf);
         
         result.Should().BeFalse();
+        
+        string GetRandomNumber() => new ('#', _faker.Random.Int(4, 7));
     }
 
     [Fact]
@@ -25,7 +33,7 @@ public class CpfRecognizerTests
     {
         var cpf = _faker.Random.Replace("##############");
 
-        var result = _recognizer.IsValid(cpf);
+        var result = _baseRecognizer.IsValid(cpf);
         
         result.Should().BeFalse();
     }
@@ -39,7 +47,7 @@ public class CpfRecognizerTests
     {
         var cpf = _faker.Random.Replace(format);
         
-        var result = _recognizer.IsValid(cpf);
+        var result = _baseRecognizer.IsValid(cpf);
         
         result.Should().BeFalse();
     }
@@ -51,7 +59,7 @@ public class CpfRecognizerTests
     {
         var cpf = _faker.Random.Replace(format);
         
-        var result = _recognizer.IsValid(cpf);
+        var result = _baseRecognizer.IsValid(cpf);
         
         result.Should().BeFalse();
     }
@@ -61,7 +69,7 @@ public class CpfRecognizerTests
     {
         var cpf = _faker.Random.Replace("###.###.###-##");
 
-        var result = _recognizer.IsValid(cpf);
+        var result = _baseRecognizer.IsValid(cpf);
         
         result.Should().BeTrue();
     }
