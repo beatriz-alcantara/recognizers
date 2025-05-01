@@ -1,6 +1,4 @@
-﻿using System.Text.RegularExpressions;
-
-namespace Recognizer.Core;
+﻿namespace Recognizer.Core;
 
 public class EmailBaseRecognizer : BaseRecognizer
 {
