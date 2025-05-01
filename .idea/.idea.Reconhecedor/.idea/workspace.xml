@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b7e16dc-b4ec-4d3c-b9ba-ea36518ebc61" name="Changes" comment="Create others recognizers">
-      <change afterPath="$PROJECT_DIR$/Recognizer.Core/EmailBaseRecognizer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recognizer.Tests/EmailBaseRecognizerTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recognizer.Tests/NameBaseRecognizerTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recognizer.Tests/PasswordBaseRecognizerTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recognizer.Tests/PhoneNumberBaseRecognizerTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Reconhecedor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Reconhecedor/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recognizer.Core/CpfRecognizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Recognizer.Core/CpfBaseRecognizer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recognizer.Core/EmailRecognizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Recognizer.Core/PasswordBaseRecognizer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recognizer.Core/IRecognizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Recognizer.Core/BaseRecognizer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recognizer.Core/NameRecognizer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recognizer.Core/PasswordRecognizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Recognizer.Core/NameBaseRecognizer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recognizer.Core/PhoneNumberRecognizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Recognizer.Core/PhoneNumberBaseRecognizer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recognizer.Tests/CpfRecognizerTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Recognizer.Tests/CpfBaseRecognizerTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recognizer.Tests/EmailRecognizerTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recognizer.Tests/NameRecognizerTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recognizer.Tests/PasswordRecognizerTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recognizer.Tests/PhoneNumberRecognizerTests.cs" beforeDir="false" />
-    </list>
+    <list default="true" id="0b7e16dc-b4ec-4d3c-b9ba-ea36518ebc61" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746066482997</updated>
-      <workItem from="1746066484665" duration="8504000" />
+      <workItem from="1746066484665" duration="8686000" />
     </task>
     <task id="LOCAL-00001" summary="Create cpf recognizer">
       <option name="closed" value="true" />
@@ -103,7 +85,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746071904205</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implements Email recognizer">
+      <option name="closed" value="true" />
+      <created>1746075081207</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746075081207</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,7 +105,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Create cpf recognizer" />
     <MESSAGE value="Create others recognizers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create others recognizers" />
+    <MESSAGE value="Implements Email recognizer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implements Email recognizer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
