@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0b7e16dc-b4ec-4d3c-b9ba-ea36518ebc61" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Reconhecedor/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Recognizer.Core/CpfRecognizer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Recognizer.Core/EmailRecognizer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Recognizer.Core/IRecognizer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Recognizer.Core/NameRecognizer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Recognizer.Core/PasswordRecognizer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Recognizer.Core/PhoneNumberRecognizer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Recognizer.Core/Recognizer.Core.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Recognizer.Tests/CpfRecognizerTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Recognizer.Tests/EmailRecognizerTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Recognizer.Tests/NameRecognizerTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Recognizer.Tests/PasswordRecognizerTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Recognizer.Tests/PhoneNumberRecognizerTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Recognizer.Tests/Recognizer.Tests.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Recognizer.sln" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="autoShow" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/51474adfb97e7f5c4d4a668a38eddd80911fa43de685b2b38f2ef4801dd3cabd/Randomizer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d49485e469b7c56ea29d165b121cd86aa5aeb67e665b5f8c68166f6ede623c9/ArgumentOutOfRangeException.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2wTXLZEKWpqHRxVdl58Tmi8m3eY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "04db3fc1-7800-4117-9337-44914906ece1.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0b7e16dc-b4ec-4d3c-b9ba-ea36518ebc61" name="Changes" comment="" />
+      <created>1746066482997</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746066482997</updated>
+      <workItem from="1746066484665" duration="4165000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
