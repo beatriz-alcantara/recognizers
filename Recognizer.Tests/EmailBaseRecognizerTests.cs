@@ -1,10 +1,11 @@
 ﻿using Bogus;
 using FluentAssertions;
 using Recognizer.Core;
+using Xunit.Abstractions;
 
 namespace Recognizer.Tests;
 
-public class EmailBaseRecognizerTests
+public class EmailBaseRecognizerTests(ITestOutputHelper outputHelper)
 {
     private readonly EmailBaseRecognizer _baseRecognizer = new();
     private readonly Faker _faker = new();
@@ -15,10 +16,14 @@ public class EmailBaseRecognizerTests
     [InlineData("??@??.??")]
     [InlineData("??.br")]
     [InlineData("????")]
+    [InlineData("@????@??.br")]
     public void GivenEmailWithInvalidFormat_IsValid_ShouldReturnFalse(string format)
     {
         var email = _faker.Random.Replace(format);
+        outputHelper.WriteLine("Email: {0}", email);
+        
         var result = _baseRecognizer.IsValid(email);
+        
         result.Should().BeFalse();
     }
 
@@ -26,6 +31,7 @@ public class EmailBaseRecognizerTests
     public void GivenValidEmail_IsValid_ShouldReturnTrue()
     {
         var email = _faker.Random.Replace($"{GetRandomString()}@{GetRandomString()}.br").ToLower();
+        outputHelper.WriteLine("Email: {0}", email);
         
         var result = _baseRecognizer.IsValid(email);
         
@@ -43,7 +49,10 @@ public class EmailBaseRecognizerTests
     public void GivenEmailWithNumber_IsValid_ShouldReturnFalse(string format)
     {
         var email = _faker.Random.Replace(format);
+        outputHelper.WriteLine("Email: {0}", email);
+        
         var result = _baseRecognizer.IsValid(email);
+        
         result.Should().BeFalse();
     }
 }
