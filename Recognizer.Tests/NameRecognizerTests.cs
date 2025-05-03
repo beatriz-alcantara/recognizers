@@ -5,22 +5,16 @@ using Xunit.Abstractions;
 
 namespace Recognizer.Tests;
 
-public class NameRecognizerTests
+public class NameRecognizerTests(ITestOutputHelper testOutputHelper)
 {
     private readonly Faker _faker = new();
     private readonly NameRecognizer _nameRecognizer = new();
-    private readonly ITestOutputHelper _outputHelper;
-    
-    public NameRecognizerTests(ITestOutputHelper testOutputHelper)
-    {
-        _outputHelper = testOutputHelper;
-    }
-    
+
     [Fact]
     public void GivenTextWithNumeric_IsValid_ShouldReturnFalse()
     {
         var name = _faker.Random.Replace("###****** ******");
-        _outputHelper.WriteLine(name);
+        testOutputHelper.WriteLine(name);
         
         var result = _nameRecognizer.IsValid(name);
         
@@ -31,7 +25,7 @@ public class NameRecognizerTests
     public void GivenNameWithAllLettersLowerCase_IsValid_ShouldReturnFalse()
     {
         var name = _faker.Random.Replace("??????? ?????").ToLower();
-        _outputHelper.WriteLine(name);
+        testOutputHelper.WriteLine(name);
         
         var result = _nameRecognizer.IsValid(name);
         
@@ -42,7 +36,7 @@ public class NameRecognizerTests
     public void GivenNameWithAllLettersUpperCase_IsValid_ShouldReturnFalse()
     {
         var name = _faker.Random.Replace("??????? ?????");
-        _outputHelper.WriteLine(name);
+        testOutputHelper.WriteLine(name);
         
         var result = _nameRecognizer.IsValid(name);
         
@@ -55,7 +49,7 @@ public class NameRecognizerTests
         var first = _faker.Random.Replace(new string('?', _faker.Random.Number(2, 15)));
         var last = _faker.Random.Replace(new string('?', _faker.Random.Number(2, 15)));
         var name = $"{first[0] + first.Substring(1).ToLower()} {last[0] + last.Substring(1).ToLower()}";
-        _outputHelper.WriteLine(name);
+        testOutputHelper.WriteLine(name);
         
         var result = _nameRecognizer.IsValid(name);
         
