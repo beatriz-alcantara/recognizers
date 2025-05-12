@@ -49,6 +49,16 @@ public class PasswordBaseRecognizerTests(ITestOutputHelper outputHelper)
     }
     
     [Fact]
+    public void GivenAPasswordWithBlankSpace_IsValid_ShouldReturnFalse()
+    {
+        var text = _faker.Random.Replace("???# ****");
+        var password = text[0] + text[1..].ToLower();
+        outputHelper.WriteLine("Password: {0}", password);
+        var result = _passwordBaseRecognizer.IsValid(password);
+        result.Should().BeFalse();
+    }
+    
+    [Fact]
     public void GivenAPasswordLessThan8Chars_IsValid_ShouldReturnTrue()
     {
         var text = _faker.Random.Replace("???#**");
