@@ -7,7 +7,7 @@ namespace Recognizer.Tests;
 
 public class PasswordBaseRecognizerTests(ITestOutputHelper outputHelper)
 {
-    private readonly Faker _faker = new Faker();
+    private readonly Faker _faker = new();
     private readonly PasswordBaseRecognizer _passwordBaseRecognizer = new();
 
     [Fact]
@@ -59,7 +59,7 @@ public class PasswordBaseRecognizerTests(ITestOutputHelper outputHelper)
     }
     
     [Fact]
-    public void GivenAPasswordLessThan8Chars_IsValid_ShouldReturnTrue()
+    public void GivenAPasswordLessThan8Chars_IsValid_ShouldReturnFalse()
     {
         var text = _faker.Random.Replace("???#**");
         var password = text[0] + text[1..].ToLower();

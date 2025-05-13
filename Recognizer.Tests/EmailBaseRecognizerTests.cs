@@ -18,6 +18,7 @@ public class EmailBaseRecognizerTests(ITestOutputHelper outputHelper)
     [InlineData("????")]
     [InlineData("@????@??.br")]
     [InlineData("??@??@??.br")]
+    [InlineData("????@??")]
     public void GivenEmailWithInvalidFormat_IsValid_ShouldReturnFalse(string format)
     {
         var email = _faker.Random.Replace(format).ToLower();
