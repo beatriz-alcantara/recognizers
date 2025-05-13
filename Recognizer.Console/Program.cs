@@ -14,20 +14,34 @@ do
     Console.WriteLine("3 - E-mail");
     Console.WriteLine("4 - Senha");
     Console.WriteLine("5 - Número de telefone");
-    Console.Write("Informe um dos valores listados acima: ");
-    validationType = Console.ReadLine();
     
-    if (string.IsNullOrWhiteSpace(validationType))
-        return;
+    BaseRecognizer? recognizer = null;
+    bool result = false;
+    while (recognizer == null)
+    {
+        Console.Write("Informe um dos valores listados acima: ");
+        validationType = Console.ReadLine();
     
-    Console.Write("Digite o texto que deseja validar: ");
-    var recognizer = FactoryRecognizer(int.Parse(validationType));
-    var text = Console.ReadLine() ?? string.Empty;
-    var result = recognizer.IsValid(text);
+        if (string.IsNullOrWhiteSpace(validationType))
+            return;
+        
+        if (int.TryParse(validationType, out var type) is false)
+            continue;
+        
+        recognizer = FactoryRecognizer(type);
+        if (recognizer == null)
+            continue;
+        
+        Console.Write("Digite o texto que deseja validar: ");
+        
+        var text = Console.ReadLine() ?? string.Empty;
+        result = recognizer.IsValid(text);
+    }
+    
     Console.WriteLine("O texto e {0}!", result ? "valido" : "invalido");
 } while(string.IsNullOrWhiteSpace(validationType) is false);
 
-BaseRecognizer FactoryRecognizer(int validation)
+BaseRecognizer? FactoryRecognizer(int validation)
 {
     return validation switch
     {
@@ -36,6 +50,6 @@ BaseRecognizer FactoryRecognizer(int validation)
         3 => new EmailBaseRecognizer(),
         4 => new PasswordBaseRecognizer(),
         5 => new PhoneNumberBaseRecognizer(),
-        _ => throw new ArgumentOutOfRangeException(nameof(validation), validation, null)
+        _ => null
     };
 }
